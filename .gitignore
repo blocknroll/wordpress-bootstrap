@@ -104,6 +104,7 @@ Thumbs.db
 !wp-content/mu-plugins/example-mu-plugin/
 !wp-content/plugins/example-plugin/
 !wp-content/themes/example-theme/
+!wp-content/themes/wordpress-bootstrap/
 
 
 .AppleDouble
