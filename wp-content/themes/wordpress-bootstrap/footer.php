@@ -1,10 +1,11 @@
       <hr>
 
       <footer>
-        <p>&copy; 2016 Company, Inc.</p>
+        <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
       </footer>
 
-    </div> <!-- /container -->
+    </div>
+    <!-- /container -->
 
     <?php wp_footer(); ?>
 
