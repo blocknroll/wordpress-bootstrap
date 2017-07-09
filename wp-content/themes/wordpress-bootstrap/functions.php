@@ -79,4 +79,8 @@
                  'front-right',
                  'Displays on the right of the homepage' );
 
+  create_widget( 'Page Sidebar',
+                 'page',
+                 'Displays on the side of pages with a sidebar' );
+
 ?>
