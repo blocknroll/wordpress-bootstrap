@@ -40,7 +40,7 @@
   add_action( 'wp_enqueue_scripts', 'theme_js' );
 
 
-  // Menu support //////////////////////////////////
+  // Menu support /////////////////////////////
 
   // add_filter( 'show_admin_bar', '__return_false' );
 
@@ -69,6 +69,7 @@
     ));
   }
 
+  // Columns ///////////////////////////////////
   create_widget( 'Front Page Left',
                  'front-left',
                  'Displays on the left of the homepage' );
@@ -79,8 +80,11 @@
                  'front-right',
                  'Displays on the right of the homepage' );
 
+  // Sidebars //////////////////////////////////
   create_widget( 'Page Sidebar',
                  'page',
                  'Displays on the side of pages with a sidebar' );
-
+  create_widget( 'Blog Sidebar',
+                 'blog',
+                 'Displays on the side of pages in the blog' );
 ?>
