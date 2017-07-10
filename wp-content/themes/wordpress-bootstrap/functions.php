@@ -1,5 +1,6 @@
 <?php
 
+// CSS //////////////////////////////////
   function theme_styles() {
     wp_enqueue_style( 'bootstrap_css',
                        get_template_directory_uri() .
@@ -15,6 +16,7 @@
   add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
 
+  // JS //////////////////////////////////
   function theme_js() {
 
     global $wp_scripts;
@@ -56,6 +58,11 @@
   add_action( 'init', 'register_theme_menus' );
 
 
+  // post-thumbnails //////////////////////////////////
+
+  add_theme_support( 'post-thumbnails' );
+
+
   // Widgets //////////////////////////////////
   function create_widget($name, $id, $description) {
     register_sidebar(array(
@@ -69,6 +76,7 @@
     ));
   }
 
+
   // Columns ///////////////////////////////////
   create_widget( 'Front Page Left',
                  'front-left',
@@ -79,6 +87,7 @@
   create_widget( 'Front Page Right',
                  'front-right',
                  'Displays on the right of the homepage' );
+
 
   // Sidebars //////////////////////////////////
   create_widget( 'Page Sidebar',
